@@ -55,14 +55,7 @@ return require('packer').startup(function(use)
 	-- For jdtls intial setup 
 	-- TODO: Setup other options
 	-- ================================================================================
-	use {
-		'mfussenegger/nvim-jdtls',
-		config = function ()
-			require("plugins-config.jdtls")
-		end,
-	}
-
-
+	use 'mfussenegger/nvim-jdtls'
 
 	-- cmp-nvim : completion helpers
 	-- https://github.com/hrsh7th/nvim-cmp 
@@ -106,7 +99,7 @@ return require('packer').startup(function(use)
 	use {
 		'lukas-reineke/indent-blankline.nvim',
 		config = function ()
-			require('plugins-config.indent-blankline').setup()
+			require('plugins-config.indent-blankline')
 		end
 	}
 

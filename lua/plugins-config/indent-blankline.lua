@@ -31,4 +31,4 @@ hooks.register(hooks.type.HIGHLIGHT_SETUP, function()
 end)
 
 ibl.setup { indent = { highlight = highlight } }
--- ibl.setup({ indent = { highlight = highlight } })
+-- ibl.setup()
