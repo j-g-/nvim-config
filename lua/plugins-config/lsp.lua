@@ -13,8 +13,8 @@ local on_attach = function()
 	vim.keymap.set("n", "<leader>gT", vim.lsp.buf.type_definition, {buffer = 0})
 	vim.keymap.set("n", "<leader>gi", vim.lsp.buf.implementation, {buffer = 0})
 	vim.keymap.set("n", "<leader>cn", vim.lsp.buf.rename, {buffer = 0})
-	vim.keymap.set("n", "<leader>dj", vim.lsp.diagnostic.goto_next, {buffer = 0})
-	vim.keymap.set("n", "<leader>dk", vim.lsp.diagnostic.goto_prev, {buffer = 0})
+	vim.keymap.set("n", "<leader>dj", vim.diagnostic.goto_next, {buffer = 0})
+	vim.keymap.set("n", "<leader>dk", vim.diagnostic.goto_prev, {buffer = 0})
 end
 
 local capabilities = require('cmp_nvim_lsp').default_capabilities()
